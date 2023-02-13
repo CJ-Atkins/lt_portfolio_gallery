@@ -1,0 +1,33 @@
+.project_imgs > img {
+   max-width: 650px;
+}
+
+.project_container {
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   padding-top: 50px;
+}
+
+.project_imgs {
+   display: flex;
+   flex-direction: column;
+}
+
+.project_info {
+   max-width: 800px;
+   padding: 80px;
+   background-color: rgba(255, 0, 0, 0.114);
+}
+
+.project_info > h1 {
+   font-family: var(--font-secondary);
+   font-size: 5.5rem;
+   color: #444;
+}
+
+.project_info > p {
+   font-family: var(--font-primary);
+   font-size: 1.4rem;
+   color: #444;
+}

@@ -1,0 +1,154 @@
+#header_container {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 70px;
+}
+
+header {
+   font-family: var(--font-secondary);
+}
+
+header > h1 {
+   margin-bottom: 0.5em;
+}
+
+header > h1 > a {
+   color: var(--colour-green);
+   text-decoration: none;
+   transition: color 0.25s ease-in-out;
+   font-size: 4.4rem;
+}
+
+header > h1 > a:hover {
+   color: var(--colour-dark-green);
+}
+
+header > h3 {
+   color: var(--colour-grey);
+   font-size: 2rem;
+   font-weight: 500;
+}
+
+nav {
+   vertical-align: middle;
+   display: flex;
+   align-items: center;
+}
+
+nav > ul,
+nav > div > ul {
+   font-family: var(--font-primary);
+   font-weight: 600;
+   letter-spacing: 0.1em;
+   list-style: none;
+}
+
+nav > ul {
+   font-size: 1.6rem;
+   display: flex;
+   justify-content: space-between;
+   gap: 30px;
+}
+
+nav > ul > li > a,
+nav > div > ul > li > a {
+   color: var(--colour-green);
+   transition: 0.2s ease-in-out;
+   text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > div > ul > li > a:hover {
+   color: var(--colour-dark-green);
+}
+
+.nav_narrow_container {
+   display: none;
+}
+
+#hamburger_btn {
+   cursor: pointer;
+}
+
+.bar {
+   display: block;
+   width: 25px;
+   height: 1px;
+   margin: 5px auto;
+   transition: all 0.25s ease-in-out;
+   background-color: #787878;
+}
+
+.nav_narrow {
+   display: none;
+   font-size: 1.6rem;
+   position: fixed;
+   left: 0;
+   width: 100%;
+   background-color: #fcfcfcf0;
+   padding-top: 30px;
+   padding-bottom: 15px;
+}
+
+@media (max-width: 1150px) {
+   header {
+      padding-left: 25px;
+   }
+
+   header > h3 {
+      display: none;
+   }
+
+   header > h1 > a {
+      font-size: 2.8rem;
+   }
+
+   .nav_wide {
+      display: none;
+   }
+
+   .nav_narrow_container {
+      display: block;
+      padding-right: 25px;
+   }
+
+   #hamburger_btn.active .bar:nth-child(2) {
+      opacity: 0;
+   }
+   #hamburger_btn.active .bar:nth-child(1) {
+      transform: translateY(6px) rotate(45deg);
+   }
+   #hamburger_btn.active .bar:nth-child(3) {
+      transform: translateY(-6px) rotate(-45deg);
+   }
+
+   .nav_narrow.active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+   }
+}
+
+@media (max-width: 850px) {
+   header > h1 > a {
+      font-size: 1.8rem;
+   }
+
+   header {
+      padding-left: 5px;
+   }
+
+   .nav_narrow_container {
+      padding-right: 5px;
+   }
+
+   .nav_narrow {
+      display: none;
+      font-size: 1.5rem;
+   }
+
+   #header_container {
+      margin-bottom: 30px;
+   }
+}
