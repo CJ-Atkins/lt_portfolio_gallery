@@ -12,6 +12,7 @@
    <link rel="stylesheet" href="/css/index.css">
    <link rel="stylesheet" href="/css/gallery.css">
    <link rel="stylesheet" href="/css/project.css">
+   <link rel="stylesheet" href="/css/resume.css">
 
    <title>Leslie Tran Character Design & Illustration</title>
 </head>
@@ -24,9 +25,9 @@
       </header>
       <nav>
          <ul class="nav_wide">
-            <li><a href="#">Character Design</a></li>
-            <li><a href="#">Illustration</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="/gallery.php">Character Design</a></li>
+            <li><a href="/gallery.php">Illustration</a></li>
+            <li><a href="/resume.php">Resume</a></li>
          </ul>
          <div class="nav_narrow_container">
             <div id="hamburger_btn">
@@ -35,9 +36,9 @@
                <span class="bar"></span>
             </div>
             <ul id="nav_narrow" class="nav_narrow">
-               <li><a class="nav_narrow_link" href="#">Character Design</a></li>
-               <li><a class="nav_narrow_link" href="#">Illustration</a></li>
-               <li><a class="nav_narrow_link" href="#">Resume</a></li>
+               <li><a class="nav_narrow_link" href="/gallery.php">Character Design</a></li>
+               <li><a class="nav_narrow_link" href="/gallery.php">Illustration</a></li>
+               <li><a class="nav_narrow_link" href="/resume.php">Resume</a></li>
             </ul>
          </div>
       </nav>
